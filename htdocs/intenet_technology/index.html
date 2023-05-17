@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aurora tours-travels with us</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <div class="box">
+        <!-- navbar  -->
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">AuroraWashing</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#packages">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">FAQ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <main>
+        <!-- slidder section -->
+        <div class="row">
+            <div class="modal fade" tabindex="-1" id="booking-modal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Book Service</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!-- popup booking window -->
+                    <div class="modal-body ">
+                        <div class="row mx-0 justify-content-center">
+                          <div class=" w-100">
+                            <form
+                              id="form-booking"
+                              class="w-100 formee rounded-1 p-4 border bg-white"
+                              
+                            >
+                            <button id="myButton">Get Address</button>
+
+                              <label class="d-block mb-4">
+                                <span class="form-label d-block ">Your name</span>
+                                <input
+                                  name="name"
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="Joe Bloggs"
+                                />
+                              </label>
+                      
+                              <label class="d-block mb-4">
+                                <span class="form-label d-block">city</span>
+                                <input
+                                  name="city"
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="city"
+                                />
+                              </label>
+                      
+                            
+                      
+                              <label class="d-block mb-4 ">
+                                <span class="form-label d-block">Address</span>
+                                <input name="address" type="text" class="form-control" placeholder="Adress" />
+                              </label>
+                      
+                              <label class="d-block mb-4">
+                                <span class="form-label d-block">Zip/Postal code</span>
+                                <input name="zip" type="text" class="form-control" placeholder="Zip/Postal code" />
+                              </label>
+                      
+                              
+                      
+                              <label class="d-block mb-4">
+                                <span class="form-label d-block">Telephone</span>
+                                <input
+                                  name="telephone"
+                                  type="text"
+                                  class="form-control"
+                                  placeholder=""
+                                />
+                              </label>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary ">submit</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+        </div>
+
+                  <!-- button function of popup window -->
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary ">submit</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        <div id="hero-cursel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#hero-cursel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#hero-cursel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#hero-cursel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active c-item">
+                <img src="img/car.jpg" class="d-block w-100 c-img" alt="...">
+                <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                    <p class="fs-3 mt-5">Car Washing</p>
+                    <h1 class="display-1 fw-bolder text-capitalize">AuroraWashing</h1>
+                    <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">Book the Services</button>
+                    
+                </div>
+              </div>
+              <div class="carousel-item c-item">
+                <img src="img/housewashing.jpg" class="d-block w-100 c-img" alt="...">
+                <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                    <p class="fs-3 mt-5">house Cleaning</p>
+                    <h1 class="display-1 fw-bolder text-capitalize">AuroraWashing</h1>
+                    <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">Book the Services</button>
+                    
+                </div>
+              </div>
+              <div class="carousel-item c-item">
+                <img src="img/carpet.jpg" class="d-block w-100 c-img" alt="...">
+                <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                    <p class="fs-3 mt-5">Carpet Cleaning</p>
+                    <h1 class="display-1 fw-bolder text-capitalize">AuroraWashing</h1>
+                    <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">Book the Services</button>
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#hero-cursel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#hero-cursel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <!-- services descrption -->
+          <section class="overview  ">
+            <div class="container h-100 d-flex align-items-center">
+                <div class="row w-100 text-center fs-4">
+                    <div class="col-xl">
+                        <i class="bi bi-map-fill"></i>
+                        services all over kaunas
+                    </div>
+                    <div class="col-xl">
+                        <i class="bi bi-droplet-fill"></i>
+                        cleaning with advanced technology
+                    </div>
+                    <div class="col-xl">
+                        <i class="bi bi-person-workspace"></i>
+                        we takecare of everything
+                    </div>
+
+                </div>
+                
+
+            </div>
+
+          </section>
+
+          <!-- card section -->
+          <section id="packages">
+            <h2 class="text-center my-5">car services</h2>
+
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg ">
+                        <div class="card bg-light  "  >
+                            <div class="card-body">
+                              <h5 class="card-title text-center">MINI </h5>
+                              <div class="container ">
+                                <i class="bi bi-car-front px-3">&#x20AC; 12</i>
+                                <i class="bi bi-truck-front px-4">&#x20AC;14</i>
+                                
+                                <i class="bi bi-truck px-4">&#x20AC;14</i>
+                                
+                                
+                              </div>
+                              <p class="card-text text-center">Car wash with drying</p>
+                              <p class="card-text text-center">Vacuuming the cabin</p>
+                              <p class="card-text text-center">Tire blackening</p>
+                              
+                              <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">Book the Services</button>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="col-lg">
+                        <div class="card bg-light  "  >
+                            <div class="card-body">
+                              <h5 class="card-title text-center">MINI </h5>
+                              <div class="container ">
+                                <i class="bi bi-car-front px-3"> &#x20AC;12</i>
+                                <i class="bi bi-truck-front px-4">&#x20AC;14</i>
+                                
+                                <i class="bi bi-truck px-4">&#x20AC;14</i>
+                                
+                                
+                              </div>
+                              <p class="card-text text-center">Car wash with drying</p>
+                              <p class="card-text text-center">Vacuuming the cabin</p>
+                              <p class="card-text text-center">Dusting or window cleaning</p>
+                              <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">Book the Services</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="col-lg">
+    
+                        <div class="card bg-light  "  >
+                            <div class="card-body">
+                              <h5 class="card-title text-center">MINI </h5>
+                              <div class="container ">
+                                <i class="bi bi-car-front px-3"> &#x20AC;12</i>
+                                <i class="bi bi-truck-front px-4">&#x20AC;14</i>
+                                
+                                <i class="bi bi-truck px-4">&#x20AC;14</i>
+                                
+                                
+                              </div>
+                              <p class="card-text text-center">Car wash with drying</p>
+                              <p class="card-text text-center">Vacuuming the cabin</p>
+                              <p class="card-text text-center">Update of plastic parts</p>
+                              <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">Book the Services</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+          
+
+
+          </section>
+
+          <!-- carpet cleaning  -->
+
+          <section>
+            <h2 class="text-center my-5">carpet and sofa cleaning</h2>
+
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg d-flex justify-content-center ">
+                        <div class="card bg-light w-25  "  >
+                            <div class="card-body">
+                              <h4 class="card-title text-center">carpet</h5>
+                              <div class="container ">
+                                
+                                <p>Sofa - bed cleaning €40</p>
+                                <p>Sofas - Corner cleaning €40</p>
+                                <p>Armchair cleaning €15</p>
+                                <p>Chair cleaning  €5</p>
+                                <p>Carpet cleaning 4 - 5 €/m²</p>
+                                <p>Carpet cleaning up to 30 m² - 3€/m²</p>
+                                <p>Carpet cleaning 30-100 m² - 2.5€/m²</p>
+                              </div>
+                              <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">Book the Services</button>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+
+            </div>
+
+          </section>
+
+          <!-- house cleaning -->
+
+          <section>
+            <h2 class="text-center my-5">House cleaning and house keeping</h2>
+
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg d-flex justify-content-center ">
+                        <div class="card bg-light w-25  "  >
+                            <div class="card-body">
+                              <h4 class="card-title text-center">services</h5>
+                              <div class="container ">
+                                
+                                <p>full house deep cleaing €40</p>
+                                <p>Roof cleangin €40</p>
+                                <p>window cleaing  €15</p>
+                                <p>Chair cleaning  €5</p>
+                                <p>Carpet cleaning 4 - 5 €/m²</p>
+                                <p>Carpet cleaning up to 30 m² - 3€/m²</p>
+                                <p>Carpet cleaning 30-100 m² - 2.5€/m²</p>
+                              </div>
+                              <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">Book the Services</button>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+
+            </div>
+
+          </section>
+
+          <section id="FAQ" class="py-5">
+
+            <h2 class="my-5 text-center">FAQ</h2>
+            <div class="container">
+                <div class="accordion w-75 mx-auto" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          how long it will take to get response from us?
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>We provide services 24*7.</strong> we typically get in touch with you with in 40 minutes after we you submit your booking
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          do we provide services in weekend also?
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          yes we do provide our services in weekend also.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          do we provide door to door step services for carwashing?
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          yes we do provide services for door to door step services for carpet cleaning and car washing.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+          </section>
+
+          
+        
+      </main>
+      <!-- map api -->
+      
+
+      <!-- footer section -->
+      <footer class="bg-dark py-5 mt-5">
+        <div class="container text-light text-center">
+            <p class="text-white-50">&copy; Copyright by byteGrad. All rights reserved.</p>
+
+        </div>
+        
+      </footer>
+     
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="api.js"></script>
+ 
+  </body>
+</html>
